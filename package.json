@@ -1,0 +1,26 @@
+{
+  "name": "fetchnewstool",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build:search": "bun build search.ts  --compile --outfile search.exe"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.5.1",
+    "@lmstudio/sdk": "^1.1.1",
+    "@mizchi/readability": "^0.5.8",
+    "@potetotown/google_news_api": "^1.0.3",
+    "google-sr": "^5.0.0",
+    "html-to-md": "^0.8.8",
+    "htmlparser2": "^10.0.0",
+    "llm-search": "^1.0.4",
+    "marked": "^15.0.11"
+  }
+}

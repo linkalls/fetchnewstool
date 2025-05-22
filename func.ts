@@ -10,7 +10,7 @@ export async function fetchWebsiteContent(url: string): Promise<{ title: string;
   // console.log(`Author: ${extracted.byline}`);
   if (!extracted.root) {
     // process.exit(1);
-    return "ウェブサイトの内容を取得できませんでした。URLが正しいか確認してください。";
+    return "ウェブサイトの内容を取得できませんでした。URLが正しいか確認してください。SPAサイトは取得できない場合があります。";
   }
   const htmlContent = toHTML(extracted.root);
   const md = html2md(htmlContent);
